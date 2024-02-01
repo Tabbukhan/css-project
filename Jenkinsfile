@@ -12,6 +12,13 @@ pipeline{
                 echo 'Performing Unit Tetsing'
             }
         }
+        stage('Deploy') {
+            steps {
+                // Deploy HTML, CSS, and JS files to a web server or hosting platform
+                // For example, copy files to a web server
+                sh 'rsync -avz ./ /path/to/deployment/'
+            }
+        }
     }
  post {
         success {
