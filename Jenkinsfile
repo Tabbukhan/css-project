@@ -1,14 +1,15 @@
 pipeline{
     agent any
     stages{
-        stage("SCM-check"){
+        
+        stage('Application Build'){
             steps{
-                git 'https://github.com/Tabbukhan/css-project.git'
+                echo 'Building Application'
             }
         }
-        stage('build'){
+         stage('Unit Test'){
             steps{
-                echo 'scm2check'
+                echo 'Performing Unit Tetsing'
             }
         }
     }
