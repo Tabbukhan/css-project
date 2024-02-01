@@ -16,7 +16,7 @@ pipeline{
             steps {
                 // Deploy HTML, CSS, and JS files to a web server or hosting platform
                 // For example, copy files to a web server
-                sh 'rsync -avz ./ https://github.com/Tabbukhan/deploy-project-test.git'
+                sh 'rsync -avz https://github.com/Tabbukhan/css-project.git https://github.com/Tabbukhan/deploy-project-test.git'
             }
         }
     }
