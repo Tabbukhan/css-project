@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Tabbukhan_css_project_1756380589809-pr-trigger-input-set
+  identifier: Build_Tabbukhan_css_project_1756380589809prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Tabbukhan_css_project_1756380589809
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
