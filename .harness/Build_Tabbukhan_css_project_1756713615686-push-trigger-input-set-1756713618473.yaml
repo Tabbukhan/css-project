@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Tabbukhan_css_project_1756713615686-push-trigger-input-set
+  identifier: Build_Tabbukhan_css_project_1756713615686pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Tabbukhan_css_project_1756713615686
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
